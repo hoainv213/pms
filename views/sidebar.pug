@@ -1,0 +1,103 @@
+a#show-sidebar.btn.btn-sm.btn-dark(href='#')
+  i.fas.fa-bars
+nav#sidebar.sidebar-wrapper
+  .sidebar-content
+    .sidebar-brand
+      a(href='#')
+      #close-sidebar
+        i.fas.fa-times
+    .sidebar-header
+      .user-pic
+        img.img-responsive.img-rounded(src='images/user.jpg', alt='User picture')
+      .user-info
+        span
+          strong.user-name.text-capitalize= user.username
+        span.user-role= user.type
+        span.user-status
+          i.fa.fa-circle
+          span Online
+    // sidebar-header
+    .sidebar-menu
+      ul
+        li.header-menu
+          span General
+        //li.sidebar-dropdown
+        //  a(href='#')
+        //    i.fa.fa-tachometer-alt
+        //    span Dashboard
+        //    span.badge.badge-pill.badge-warning New
+        //  .sidebar-submenu
+        //    ul
+        //      li
+        //        a(href='#')
+        //          | Dashboard 1
+        //          span.badge.badge-pill.badge-success Pro
+        //      li
+        //        a(href='#') Dashboard 2
+        //      li
+        //        a(href='#') Dashboard 3
+        li.sidebar-dropdown
+          p.clear-margin
+            i.fa.fa-shopping-cart
+            span Properties
+            span.badge.badge-pill.badge-danger 3
+          .sidebar-submenu
+            ul
+              li
+                a(href='#')
+                  | Products
+              li
+                a(href='#') Orders
+        li.sidebar-dropdown
+          p.clear-margin
+            i.fa.fa-users
+            span Users
+          .sidebar-submenu
+            ul
+              li
+                a(href='#') General
+              li
+                a(href='#') All users
+
+        li.sidebar-dropdown
+          p.clear-margin
+            i.fa.fa-chart-line
+            span Charts
+          .sidebar-submenu
+            ul
+              li
+                a(href='#') Overview
+        li.sidebar-dropdown
+          p.clear-margin
+            i.fa.fa-globe
+            span Maps
+          .sidebar-submenu
+            ul
+              li
+                a(href='#') Google maps
+        li.header-menu
+          span Extra
+        li
+          a(href='#')
+            i.fa.fa-book
+            span Documentation
+            span.badge.badge-pill.badge-primary Beta
+        li
+          a(href='#')
+            i.fa.fa-calendar
+            span Calendar
+    // sidebar-menu
+    // sidebar-content
+    .sidebar-footer
+      a(href='#')
+        i.fa.fa-bell
+        span.badge.badge-pill.badge-warning.notification 3
+      a(href='#')
+        i.fa.fa-envelope
+        span.badge.badge-pill.badge-success.notification 7
+      a(href='#')
+        i.fa.fa-cog
+        span.badge-sonar
+      a(href='/logout')
+        i.fa.fa-power-off
+// sidebar-wrapper

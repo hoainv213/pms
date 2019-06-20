@@ -1,0 +1,11 @@
+extends ../layout-bf-login
+
+block content
+  .wrapper.fadeInDown.pt-100
+    #formContent.col-md-5.m-auto.clear-padding
+      .fadeIn.first.w-85.pt-4
+      form(method='post', action='/login')
+        input#login.fadeIn.second.login-form(type='text', name='username', placeholder='username', value=posted('username'))
+        input#password.fadeIn.third.login-form(type='password', name='password', placeholder='Password')
+        button.fadeIn.btn.btn-primary.btn-block.mb-2.w-85.mb-4(type='submit') Login
+      #formFooter
