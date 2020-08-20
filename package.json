@@ -15,7 +15,7 @@
     "watch:scss": "npm run compile:scss && node-sass public/scss/main.scss public/css/style.css -w"
   },
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.4",
